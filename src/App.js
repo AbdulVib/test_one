@@ -1,0 +1,22 @@
+import React, { Component } from 'react'
+
+//comps
+import Congrats from './component/congrats/Congrats'
+import GuessedWords from './component/guessWord/GuessWord'
+
+export default class App extends Component {
+  state = {
+    success: true
+  }
+  render() {
+    return (
+      <div className="container">
+        <h1>Guess ?</h1>
+        <Congrats success={ this.state.success } />
+        <GuessedWords guessedWords={[
+          { guessedWord: 'hello', letterMatchCount: 12}
+        ]} />
+      </div>
+    )
+  }
+}
