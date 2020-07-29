@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 //comps
-import Congrats from './component/congrats/Congrats'
-import GuessedWords from './component/guessWord/GuessWord'
+import Congrats from './container/congrats/Congrats'
+import GuessedWords from './container/guessWord/GuessWord'
 
 export default class App extends Component {
   state = {
